@@ -1,0 +1,26 @@
+<html ng-app="quoteGame">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body class="container" ng-controller="GameController as game">
+          <div class="characters-side">
+               <div class="char-display" ng-repeat="quote in game.answers">
+                    <img class="char-size" ng-src="{{quote.pic}}" alt=""/>
+              </div>
+          </div>
+          <div class="quotes-side">
+              <div class="quote-display" ng-repeat="quote in game.answers">
+                  <h3> {{ quote.text }} </h3>
+                  <h3> {{ quote.speaker }} </h3>
+                  <h3> {{ quote.number }} </h3>
+              </div>
+          <div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" defer ></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8" defer></script>
+  </body>
+</html>
